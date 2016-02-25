@@ -3,7 +3,7 @@ function [ output ] = mc_test(P,p0,n)
 %   Detailed explanation goes here
 lastStateVector = zeros(1,n);
 for i = 1:n
-    simvector = mc_sim(P,p0,100);
+    simvector = mc_sim(P,p0,1000);
     lastStateVector(i) = simvector(end);
 end
 
